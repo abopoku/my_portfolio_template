@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import PlaceholderHero from '../assets/placeholder_hero_background.jpg'
+import PlaceholderHero from '../assets/queenmothers.jpeg'
 
-const fullName = 'Replace with your name';
-const personalQuote = 'Replace with your personal quote';
-const professionalSummary = 'Replace with your professional summary';
+const fullName = 'Aba Opoku';
+const personalQuote = 'Strive to be the best version of yourself everyday, one step at a time.';
+const professionalSummary = 'IT Professional with more than eight years of proven experience in customer service leadership and project coordination. Familiar with a broad range of programming languages and interactive user interfaces. Possess  knowledge of the entire web development process, command line, and shell scripting. Career supported by the pursuit of a database administrator certification, google python certification and a scrum master certification.';
 
 const Home = () => {
   return (
