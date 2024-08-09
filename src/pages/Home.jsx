@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import PlaceholderHero from '../assets/queenmothers.jpeg'
+import PlaceholderHero from '../assets/background1.jpg';
 
 const fullName = 'Aba Opoku';
 const personalQuote = 'Strive to be the best version of yourself everyday, one step at a time.';

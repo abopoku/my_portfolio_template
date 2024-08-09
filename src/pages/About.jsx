@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import PlaceholderImage from '../assets/linkedin photo.jpeg';
+import PlaceholderImage from '../assets/pic1.jpeg';
 
 // Replace these variables with your information
 const firstName = 'Aba';

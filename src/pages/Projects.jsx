@@ -8,30 +8,16 @@ import { FaGithub } from "react-icons/fa6";
 // You can also add more properties if you want to display more information about your projects.
 const myProjects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1',
-    repositoryLink: 'Link to the GitHub repository',
+    title: 'Weather App',
+    description: 'Developed a React-based weather application that integrates with the OpenWeatherAPI to provide real-time weather updates. This project involved building a dynamic UI using React components, js, and props, and implementing event handling, form management, and API calls. The application allows users to input a location and view the current weather conditions for that location.',
+    repositoryLink: 'https://github.com/abopoku/weather-application2.0',
   },
   {
-    title: 'Project 2',
-    description: 'Description of project 2',
-    repositoryLink: 'Link to the GitHub repository',
+    title: 'DangoDot Anime App',
+    description: 'Collaborated on a capstone project to develop an Anime TV Show Database application with integrated movie features, similar to Crunchyroll. Worked alongside a team to utilize React, Express, and MongoDB to create a robust and user-friendly platform. Employed Git and GitHub for version control and team collaboration.',
+    repositoryLink: 'https://github.com/abopoku/DangoDot_2.0',
   },
-  {
-    title: 'Project 3',
-    description: 'Description of project 3',
-    repositoryLink: 'Link to the GitHub repository',
-  },
-  {
-    title: 'Project 4',
-    description: 'Description of project 4',
-    repositoryLink: 'Link to the GitHub repository',
-  },
-  {
-    title: 'Project 5',
-    description: 'Description of project 5',
-    repositoryLink: 'Link to the GitHub repository',
-  },
+
 ];
 const Projects = () => {
   return (
