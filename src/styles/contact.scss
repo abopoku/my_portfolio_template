@@ -3,35 +3,73 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background:linear-gradient(135deg, rgba(0, 174, 255, 0.6), rgba(0, 255, 174, 0.3));
+  
+ 
   .form-container {
     width: 90%;
     @media screen and (min-width: $laptop) {
       width: 800px;
     }
-    background-color: #0fa32287;
+  background-color: rgba(15, 163, 34, 0.53);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;background-color: #0fa32287;
+
+  &:hover {
+    transform: translateY(-5px); // Lift effect on hover
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Enhance shadow on hover
+  }
   }
   form {
     display: flex;
     flex-direction: column;
-    button[type='submit'] {
-      height: 50px;
-      border: solid 1px black;
-      
+    gap: 15px;
+    p {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: #00695c; // A more inviting color
     }
-    input[type='text'], input[type='email'], textarea {
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
       margin-bottom: 10px;
-      border: solid 1px black;
+      border: solid 1px #004d40; // Softer border color
       width: 100%;
-      padding: 5px;
+      padding: 10px; // Increase padding for a more comfortable feel
       border-radius: 5px;
+      font-size: 1em;
+      background-color: #e0f2f1; // Light background for input fields
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+
+      &:focus {
+        border-color: #00796b; // Change border color on focus
+        background-color: #ffffff; // Change background on focus for better visibility
+        outline: none;
+      }
     }
+
     textarea {
       resize: none;
       height: 150px;
     }
-    p {
+
+    button[type='submit'] {
+      height: 50px;
+      border: none; // Remove the default border
+      background-color: #00796b; // Primary color for the button
+      color: #ffffff; // White text
       font-size: 1.2em;
-      margin-bottom: 5px;
+      border-radius: 25px; // Fully rounded corners
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #004d40; // Darker shade on hover
+        transform: scale(1.05); // Slight zoom on hover
+      }
     }
   }
 }

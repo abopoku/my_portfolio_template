@@ -2,6 +2,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  background:linear-gradient(135deg, rgba(0, 174, 255, 0.6), rgba(0, 255, 174, 0.3));
   .about-content-container {
     margin-top: 20px;
     display: flex;
@@ -24,8 +25,14 @@
         margin: 0 0 0 30px;
       }
       .contact-me-btn {
-        border: solid 1px black;
-        padding: 5px;
+        border-radius: 25px;
+        background: linear-gradient(135deg, #00aeff, #0077ff);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: white;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        max-width: 200px;
+        padding: 9px;
+        text-align: center;
       }
       p {
         font-size: 1.1rem;
