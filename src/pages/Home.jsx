@@ -9,31 +9,37 @@ const professionalSummary = 'IT Professional with more than eight years of prove
 const Home = () => {
   return (
     <main className="home-container">
-      <section className="home-hero home-subsection">
+      <section id= "home" className="home-hero home-subsection">
         <h2 className="text-4xl mb-2"> {fullName}</h2>
         <h3 className="text-2xl mb-2">{title}</h3>
         <p className="subsection-paragraph">"{personalQuote}"</p>
+        <a href="#introduction" class="read-more">Read More</a>
         <NavLink to="/about">
         Learn More About Me
         </NavLink>
+        
         {/* Replace the src with your own placeholder and change the alt to match the description */}
         <img className="hero-background" src={PlaceholderHero} alt="placeholder hero image" />
       </section>
-      <section className="overview home-subsection">
+      <section id= "introduction" className="overview home-subsection">
         <h3 className="subsection-intro-header">Introduction</h3>
         <h2 className="subsection-big-header">Overview.</h2>
         <p className="subsection-paragraph">{professionalSummary}</p>
+        <a href="#works" class="read-more">Read More</a>
         <NavLink to="/contact">
         Contact Me
         </NavLink>
+        
       </section>
-      <section className="projects home-subsection">
+      <section id= "works" className="projects home-subsection">
         <h3 className="subsection-intro-header">My Works</h3>
         <h2 className="subsection-big-header">Projects.</h2>
         <p className="subsection-paragraph">I have worked on multiple projects, the projects I have worked on demonstrate my skills and experience through real-life examples of my work. Each project is briefly deescribed and includes links to code repositories that showcase my ability to tackle challenging problems. If you are interested in my work click on the link below to go to the project page.</p>
+        <a href="#home" class="read-more">Back to Top</a>
         <NavLink to="/projects">
         View Projects
         </NavLink>
+        
       </section>
     </main>
   )
