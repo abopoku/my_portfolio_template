@@ -1,11 +1,13 @@
-.home-container {
-  flex:1;
-  display: flex;
-  flex-direction: column;
+
+
   .home-subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(135deg, rgba(0, 174, 255, 0.5), rgba(255, 255, 255, 0.5));
     min-height: 100vh;
-    padding: 50px 15px 0;
+    padding: 50px 15px;
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 0.5s ease-out forwards;
@@ -37,24 +39,57 @@
       color: #333;
       max-width: 700px;
     }
-    a {
-      border-radius: 25px;
-      background: linear-gradient(135deg, #00aeff, #0077ff);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      color: white;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-      max-width: 200px;
-      padding: 9px;
-      text-align: center;
 
-    }
-    a:hover {
-      background-color: #0055cc;
-      transform: scale(1.05);
-    }
+  }
+  .subsection-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
 
+  a.read-more {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #00aeff, #0077ff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 200px;
+    padding: 9px;
+    text-align: center;
+    align-self: center;
+
+
+  }
+  a.read-more:hover {
+    background-color: #0055cc;
+    transform: scale(1.05);
+  }
+
+  a.other-buttons {
+    margin-top: 10px; /* Adds space between the buttons */
+    border-radius: 25px;
+    background: linear-gradient(135deg, #00aeff, #0077ff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 200px;
+    padding: 9px;
+    text-align: center;
+  }
+  
+  a.other-buttons:hover {
+    background-color: #0055cc;
+    transform: scale(1.05);
+  }
 
   .home-hero {
     position: relative;
@@ -84,4 +119,3 @@
   }
 
 
-}
